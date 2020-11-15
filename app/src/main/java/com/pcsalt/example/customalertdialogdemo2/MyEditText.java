@@ -1,10 +1,11 @@
 package com.pcsalt.example.customalertdialogdemo2;
 
 import android.content.Context;
-import android.support.v7.widget.AppCompatEditText;
 import android.view.ViewGroup.LayoutParams;
 import android.view.inputmethod.EditorInfo;
 import android.widget.LinearLayout;
+
+import androidx.appcompat.widget.AppCompatEditText;
 
 /**
  * Created by Navkrishna on 12 October, 2017

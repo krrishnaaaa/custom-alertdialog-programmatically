@@ -1,12 +1,16 @@
 package com.pcsalt.example.customalertdialogdemo2;
 
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+import android.text.InputType;
+import android.text.method.PasswordTransformationMethod;
+import android.text.method.TransformationMethod;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -33,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
         final EditText et_User = new MyEditText(this);
         final EditText et_Pass = new MyEditText(this);
+        et_Pass.setTransformationMethod(PasswordTransformationMethod.getInstance());
 
         TextView tv_User = new TextView(this);
         TextView tv_Pass = new TextView(this);
